@@ -22,4 +22,4 @@ const arrLi = images.map(({ alt, url }) => {
   return `<li><img src=${url} alt="${alt}" width=320/></li>`;
 });
 
-list.innerHTML = arrLi.join('');
+list.insertAdjacentHTML('afterbegin', arrLi.join(''));
